@@ -1,0 +1,21 @@
+# Obtener productos
+GET https://127.0.0.1:8000/api/productos HTTP/1.1
+content-type: application/json
+
+# Obtener producto
+GET https://127.0.0.1:8000/api/productos/2 HTTP/1.1
+content-type: application/json
+
+# Crear producto
+POST https://127.0.0.1:8000/api/productos HTTP/1.1
+content-type: application/json
+
+{
+    'producto' => "paleta de caramelo macizo"
+    ,'existencias' => 568
+    ,'precio_unitario' => 2.5
+    ,'fotografia' => "paleta.jpg"
+    ,'descripcion' => "Paleta de caramelo macizo diferentes sabores"
+    ,'estatus' => "Activo"
+    ,'tasa_iva' => 16
+}
